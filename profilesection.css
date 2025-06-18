@@ -1,0 +1,26 @@
+.profileSection {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  flex-direction: column;
+  background-size: cover;
+  margin-top: 30px;
+}
+
+@media (width>=765px) {
+  .profileSection {
+    width: 90%;
+  }
+}
+.employeeName {
+  color: #6366f1;
+}
+.bio {
+  color: #b6c5ff;
+  font-weight: bold;
+}

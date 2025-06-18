@@ -1,0 +1,81 @@
+.filters-container {
+  background-color: #000000;
+  padding: 20px;
+  width: 100%;
+}
+
+.filters-container h2 {
+  color: #4f46e5;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.filters-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters-container li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.filters-container input[type='checkbox'],
+.filters-container input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+  accent-color: #4f46e5;
+  flex-shrink: 0;
+}
+
+.btnfilter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 150px;
+}
+
+.filters-container label {
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #64748b;
+  margin: 24px 0;
+  width: 90%;
+}
+
+.filters-container input[type='checkbox']:checked + label,
+.filters-container input[type='radio']:checked + label {
+  color: #4f46e5;
+}
+
+.filters-container li {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.filters-container input,
+.filters-container label {
+  vertical-align: middle;
+}
+
+.filters-container label {
+  text-transform: none;
+}
+
+.filters-container input[type='checkbox'] + label,
+.filters-container input[type='radio'] + label {
+  white-space: nowrap;
+}

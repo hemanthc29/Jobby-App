@@ -1,0 +1,47 @@
+.MainProductsContainer {
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (width>=765px) {
+  .MainProductsContainer {
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+  }
+  .FiltersProfileContainer {
+    width: 35%;
+  }
+  .ProductsContainer {
+    width: 65%;
+  }
+}
+
+h1 {
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+@media (width>=765px) {
+  .search-container {
+    margin-left: 30px;
+  }
+}
+
+.Searchelement {
+  width: 350px;
+  margin-top: 10px;
+}
+
+.searchbtn {
+  width: 50px;
+}

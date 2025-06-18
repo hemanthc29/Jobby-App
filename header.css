@@ -1,0 +1,129 @@
+nav {
+  width: 100%;
+  background-color: #272727;
+  padding: 20px 20px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.largeDeviceContainer {
+  display: none;
+}
+
+.smallDevicesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (width >= 765px) {
+  .largeDeviceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .smallDevicesContainer {
+    display: none;
+  }
+
+  .lDeviceLogo {
+    width: 120px;
+    cursor: pointer;
+  }
+
+  .tabs {
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .tabs.active a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .tabs.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4f46e5;
+  }
+
+  .largenavtabs {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .largenavtabs li a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .logout-btn {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .largeDeviceContainer button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.smallDevicesContainer img {
+  width: 100px;
+}
+
+.smallDevicesContainer ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.smallDevicesContainer li {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.smallDevicesContainer li.active a {
+  color: #4f46e5;
+}
+
+.smallDevicesContainer a {
+  color: white;
+  display: flex;
+  align-items: center;
+}
